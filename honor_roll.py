@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 # extract data from "https://osuokc.edu/honorroll/VP-FA18"
-# Fall 2o18 Honor Roll
+# Fall 2018 Honor Roll
 response = requests.get("https://osuokc.edu/honorroll/VP-FA18")
 content = response.content
 soup = BeautifulSoup(content, 'lxml')
